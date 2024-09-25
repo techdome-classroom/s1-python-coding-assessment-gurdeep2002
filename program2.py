@@ -25,12 +25,7 @@ def decode_message(s:str, p:str):
 
     return dp[n][m]
 
-# Test cases
-print(is_match("aa", "a"))      # Output: False
-print(is_match("aa", "*"))      # Output: True
-print(is_match("cb", "?a"))     # Output: False
-print(is_match("adceb", "*a*b")) # Output: True
-print(is_match("acdcb", "a*c?b")) # Output: False
+
 
 
 
