@@ -10,13 +10,13 @@ def decode_message(s:str, p:str):
     
     # Fill the dp array for the pattern starting with '*'
         for i in range(1, n + 1):
-        if pattern[i - 1] == '*':
-            dp[i][0] = dp[i - 1][0]
+            if pattern[i - 1] == '*':
+                dp[i][0] = dp[i - 1][0]
     
     # Fill the rest of the dp table
-    for i in range(1, n + 1):
-        for j in range(1, m + 1):
-            if pattern[i - 1] == '?' or pattern[i - 1] == message[j - 1]:
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                if pattern[i - 1] == '?' or pattern[i - 1] == message[j - 1]:
                 # If it's a '?' or a character matches, take the diagonal value
                 dp[i][j] = dp[i - 1][j - 1]
             elif pattern[i - 1] == '*':
