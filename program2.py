@@ -1,6 +1,6 @@
 def decode_message(s:str, p:str):
     def is_match(message, pattern):
-    m, n = len(s), len(p)
+        m, n = len(s), len(p)
     
     # dp[i][j] will be True if pattern[0:i] matches message[0:j]
     dp = [[False] * (m + 1) for _ in range(n + 1)]
