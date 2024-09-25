@@ -1,5 +1,5 @@
 def decode_message(s:str, p:str):
-    def matches(message, pattern):
+   
     if not pattern:
         return not message
 
