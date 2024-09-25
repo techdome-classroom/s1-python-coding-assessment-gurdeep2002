@@ -8,9 +8,9 @@ def decode_message( s: str, p: str) -> bool:
         return matches(s, p[1:]) or (s and matches(s[1:], p))
 
     if p[0] == '?':
-        return s and matches(message[1:], pattern[1:])
+        return s and matches(s[1:], p[1:])
 
-    return message and message[0] == pattern[0] and matches(message[1:], pattern[1:])
+    return s and s[0] == p[0] and matches(message[1:], pattern[1:])
 
 
   
