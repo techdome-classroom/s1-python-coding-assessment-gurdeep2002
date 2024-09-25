@@ -50,7 +50,7 @@ grid2 = [
 ]
 
 print(getTotalIsles(grid1))  # Output: 1
-print(num_islands(grid2))  # Output: 3
+print(getTotalIsless(grid2))  # Output: 3
 
     
                     
