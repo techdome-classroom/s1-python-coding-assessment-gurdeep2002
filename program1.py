@@ -15,10 +15,10 @@ class Solution:
         # Mark the landmass as visited by changing 'L' to 'W' or any other marker
             grid[r][c] = 'W'
         # Explore the four adjacent directions
-        dfs(r+1, c)  # Down
-        dfs(r-1, c)  # Up
-        dfs(r, c+1)  # Right
-        dfs(r, c-1)  # Left
+            dfs(r+1, c)  # Down
+            dfs(r-1, c)  # Up
+            dfs(r, c+1)  # Right
+            dfs(r, c-1)  # Left
 
     # Island count
     island_count = 0
