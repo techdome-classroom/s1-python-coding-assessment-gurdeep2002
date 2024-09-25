@@ -3,10 +3,9 @@ class Solution:
     def getTotalIsles(self, grid: list[list[str]]) -> int:
         
         if not grid:
-            return 0  # Edge case: empty grid
+            return 0 
         
-    
-    # Dimensions of the grid
+
         rows, cols = len(grid), len(grid[0])
     
         def dfs(r, c):
