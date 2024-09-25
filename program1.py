@@ -8,9 +8,9 @@ class Solution:
     # Dimensions of the grid
             rows, cols = len(grid), len(grid[0])
     
-        def dfs(r, c):
+    def dfs(r, c):
         # If out of bounds or at water, stop the DFS
-            if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] == 'W':
+        if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] == 'W':
             return
         # Mark the landmass as visited by changing 'L' to 'W' or any other marker
             grid[r][c] = 'W'
