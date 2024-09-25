@@ -3,13 +3,13 @@ def decode_message(s:str, p:str):
         m, n = len(s), len(p)
     
     # dp[i][j] will be True if pattern[0:i] matches message[0:j]
-    dp = [[False] * (m + 1) for _ in range(n + 1)]
+        dp = [[False] * (m + 1) for _ in range(n + 1)]
     
     # Empty pattern matches empty message
-    dp[0][0] = True
+        dp[0][0] = True
     
     # Fill the dp array for the pattern starting with '*'
-    for i in range(1, n + 1):
+        for i in range(1, n + 1):
         if pattern[i - 1] == '*':
             dp[i][0] = dp[i - 1][0]
     
