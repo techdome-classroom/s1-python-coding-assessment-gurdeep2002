@@ -13,7 +13,7 @@ class Solution:
             if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] == 'W':
             return
         # Mark the landmass as visited by changing 'L' to 'W' or any other marker
-        grid[r][c] = 'W'
+            grid[r][c] = 'W'
         # Explore the four adjacent directions
         dfs(r+1, c)  # Down
         dfs(r-1, c)  # Up
