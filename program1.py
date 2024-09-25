@@ -49,7 +49,7 @@ grid2 = [
     ["W","W","W","L","L"],
 ]
 
-print(num_islands(grid1))  # Output: 1
+print(getTotalIsles(grid1))  # Output: 1
 print(num_islands(grid2))  # Output: 3
 
     
