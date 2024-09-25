@@ -11,7 +11,7 @@ def decode_message(s:str, p:str):
     if p[0] == '?':
         return message and matches(message[1:], pattern[1:])
 
-    return message and message[0] == pattern[0] and matches(message[1:], pattern[1:])
+    return s and message[0] == pattern[0] and matches(message[1:], pattern[1:])
     
  
 
