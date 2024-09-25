@@ -1,7 +1,7 @@
 def decode_message(s:str, p:str):
    
     if not p:
-        return not message
+        return False
 
     if p[0] == '*':
         if len(pattern) == 1:
