@@ -33,24 +33,7 @@ class Solution:
     
         return island_count
 
-# Test cases
 
-grid1 = [
-    ["L","L","L","L","W"],
-    ["L","L","W","L","W"],
-    ["L","L","W","W","W"],
-    ["W","W","W","W","W"],
-]
-
-grid2 = [
-    ["L","L","W","W","W"],
-    ["L","L","W","W","W"],
-    ["W","W","L","W","W"],
-    ["W","W","W","L","L"],
-]
-
-print(getTotalIsles(grid1))  # Output: 1
-print(getTotalIsless(grid2))  # Output: 3
 
     
                     
