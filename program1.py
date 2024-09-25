@@ -21,7 +21,7 @@ class Solution:
             dfs(r, c-1)  # Left
 
     # Island count
-    island_count = 0
+        island_count = 0
     
     # Iterate over every cell in the grid
     for r in range(rows):
