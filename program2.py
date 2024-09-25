@@ -1,4 +1,4 @@
-def decode_message("abc", "?b?")
+def decode_message(s:str, "?b?")
 
 
 
