@@ -1,5 +1,5 @@
 def decode_message( s: str, p: str) -> bool:
-     if not pattern:
+     if not p:
         return False
 
      if pattern[0] == '*':
