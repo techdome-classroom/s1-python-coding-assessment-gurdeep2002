@@ -5,7 +5,7 @@ def decode_message( s: str, p: str) -> bool:
      if p[0] == '*':
         if len(p) == 1:
             return True
-        return matches(s, p[1:]) or (s and matches(message[1:], pattern))
+        return matches(s, p[1:]) or (s and matches(s[1:], p))
 
     if pattern[0] == '?':
         return message and matches(message[1:], pattern[1:])
