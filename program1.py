@@ -24,13 +24,13 @@ class Solution:
         island_count = 0
     
     # Iterate over every cell in the grid
-    for r in range(rows):
-        for c in range(cols):
-            if grid[r][c] == 'L':  # Found an unvisited landmass
-                island_count += 1  # This is a new island
-                dfs(r, c)  # Perform DFS to mark the entire island
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c] == 'L':  # Found an unvisited landmass
+                    island_count += 1  # This is a new island
+                    dfs(r, c)  # Perform DFS to mark the entire island
     
-    return island_count
+        return island_count
 
 # Test cases
 
