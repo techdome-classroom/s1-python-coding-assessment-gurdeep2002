@@ -54,4 +54,4 @@ print(getTotalIsless(grid2))  # Output: 3
 
     
                     
-        return 0
+        
