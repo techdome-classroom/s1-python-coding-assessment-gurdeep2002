@@ -2,7 +2,7 @@ class Solution:
    
     def getTotalIsles(self, grid: list[list[str]]) -> int:
         def num_islands(grid):
-    if not grid:  # Edge case: empty grid
+            if not grid:  # Edge case: empty grid
         return 0
     
     # Dimensions of the grid
