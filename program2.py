@@ -1,4 +1,4 @@
-def decode_message(self,s:str, p:str):
+def decode_message(s:str, p:str):
    
     if not p:
         return not s
